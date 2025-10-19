@@ -320,14 +320,15 @@ aside > div > p {
 .services-section {
   width: 100%;
   background-color: #ffffff;
-  height: 53rem;
-  padding: 100px;
+  height: 70rem;
+  padding: 70px;
 }
 .main-services-container {
   display: flex;
   justify-content: space-between;
-  width: 100%;
-  height: fit-content;
+  width: 90%;
+  height: 48.5rem;
+  margin: auto;
 }
 .services {
   width: 50%;
@@ -336,32 +337,34 @@ aside > div > p {
   font-size: 50px;
   font-weight: 400;
   color: #0d0d0d;
+  margin-top: 10px;
   margin-bottom: 25px;
 }
 .services > h2 > span {
   color: #8f9698;
 }
 .services > button {
-  width: 8rem;
-  height: 3rem;
+  width: 9rem;
+  height: 3.5rem;
   padding: 10px;
   border-radius: 30px;
   color: #ffffff;
   cursor: pointer;
   background-color: #00d47d;
   font-size: 14px;
-  margin-bottom: 8rem;
+  margin-bottom: 10.3rem;
 }
 .services-list {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 29rem;
+  width: 35rem;
 }
 .services-list > div {
-  width: 14rem;
+  width: 17rem;
+  height: 12rem;
   padding: 18px;
-  border: 1px solid #e5e5e5;
+  border: 2px solid #e5e5e5;
   border-radius: 10px;
 }
 .services-list > div:nth-child(1) {
@@ -372,13 +375,13 @@ aside > div > p {
 }
 .services-list > div > h2 {
   margin-bottom: 12px;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 400;
   color: #757575;
 }
 .services-list > div > p {
   margin-bottom: 12px;
-  font-size: 20px;
+  font-size: 25px;
   color: #0d0d0d;
 }
 .services-list > div > a {
@@ -386,4 +389,11 @@ aside > div > p {
   text-decoration: underline;
   text-underline-offset: 5px;
   text-decoration-thickness: 1px;
+}
+.services-img-container {
+  height: 100%;
+}
+.services-img-container > img {
+  height: 100%;
+  border-radius: 20px;
 }
