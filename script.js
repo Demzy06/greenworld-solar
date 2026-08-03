@@ -16,6 +16,27 @@ const hr = document.querySelector('hr')
 const copyrightDiv = document.querySelector('.copyright-div')
 console.log(footerDivs)
 
+const websiteContent = document.querySelector(".website-content");
+const desktopOnly = document.querySelector(".desktop-only");
+
+function checkScreenSize() {
+  if (window.innerWidth < 1440) {
+    websiteContent.style.display = "none";
+    desktopOnly.style.display = "flex";
+    document.body.style.overflow = "hidden";
+  } else {
+    websiteContent.style.display = "";
+    desktopOnly.style.display = "none";
+    document.body.style.overflow = "";
+  }
+}
+
+// Run on page load
+checkScreenSize();
+
+// Run whenever the browser is resized
+window.addEventListener("resize", checkScreenSize);
+
 // Animating hero section
 const revealDiv = function (entries, observer) {
   entries.forEach(entry => {
@@ -31,7 +52,7 @@ const revealDiv = function (entries, observer) {
 // Function to loop over the htmlcollection and observe elements
 const revealObserver = new IntersectionObserver(revealDiv, {
   root: null,
-  threshold: 0,
+  threshold: 0.5,
   // rootMargin: "100px"
 })
 

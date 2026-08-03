@@ -1,9 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <!-- <link rel="stylesheet" href="responsive.css" /> -->
     <script
       src="https://kit.fontawesome.com/a586115660.js"
       crossorigin="anonymous"
@@ -11,30 +12,58 @@
     <title>GreenWorld</title>
   </head>
   <body>
-    <header>
-      <div class="name">
-        <h3>GreenWorld</h3>
+    <!-- <div id="desktop-message" hidden>
+      <h2>This project was designed for desktop viewing.</h2>
+      <p>
+        Please visit using a laptop or desktop computer for the best experience
+      </p>
+    </div> -->
+
+    <div class="desktop-only">
+      <div class="desktop-card">
+        <div class="desktop-icon"></div>
+
+        <h1>Desktop Experience</h1>
+
+        <p>
+          GreenWorld was designed for larger screens to provide the best
+          experience.
+        </p>
+
+        <div class="desktop-info">
+          <span>Better visuals</span>
+          <span> Interactive animations</span>
+          <span> Optimized for desktop</span>
+        </div>
+
+        <button onclick="window.location.reload()">Continue on Desktop</button>
       </div>
+    </div>
 
-      <nav>
-        <ul>
-          <li>Home</li>
-          <li>About Us</li>
-          <li>Features</li>
-          <li>Services</li>
-          <li>Contact</li>
-        </ul>
-      </nav>
+    <main class="website-content container">
+      <header>
+        <div class="name">
+          <h3>GreenWorld</h3>
+        </div>
 
-      <div class="action-btns">
-        <button><p>Log In</p></button>
-        <button><p>Get In Touch</p></button>
-        <!-- <button>Log In</button>
+        <nav>
+          <ul>
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Features</li>
+            <li>Services</li>
+            <li>Contact</li>
+          </ul>
+        </nav>
+
+        <div class="action-btns">
+          <button><p>Log In</p></button>
+          <button><p>Get In Touch</p></button>
+          <!-- <button>Log In</button>
         <button>Get In Touch</button> -->
-      </div>
-    </header>
+        </div>
+      </header>
 
-    <main class="container">
       <section class="hero-section-container">
         <div class="hero-section">
           <div class="preview">
